@@ -10,28 +10,28 @@ body {
 }
 
 .border-left {
-    width: 80px;
-    height: 790px;
+    width: 140px;
+    height: 820px;
     position: absolute;
     background-color: white;
-    z-index: +2;
+    z-index: +4;
 }
 
 .border-right {
-    width: 80px;
-    height: 790px;
+    width: 140px;
+    height: 820px;
     position: absolute;
     background-color: white;
-    z-index: +2;
+    z-index: +4;
     left: 580px;
 }
 
 .border-top {
     width: 660px;
-    height: 50px;
+    height: 80px;
     position: absolute;
     background-color: white;
-    z-index: +2;
+    z-index: +4;
     top: -50px;
 }
 
@@ -43,32 +43,54 @@ body {
 }
 
 .ground {
-    background-color: brown;
+    background-image: url('assets/grass_ground.png');
+    background-size: cover;
     width: 500px;
     height: 150px;
     position: absolute;
     top: 580px;
-    z-index: +1;
+    z-index: +3;
 }
 
 .duck {
-    background-color: yellow;
+    background-image: url('assets/duck.png');
+    background-size: cover;
     position: absolute;
     width: 60px;
     height: 45px;
 }
 
 .obstacle {
-    background-color: green;
+    background-image: url('assets/tree_stump.png');
+    background-size: contain;
     width: 60px;
     height: 300px;
     position: absolute;
+    z-index: +2;
 }
 
 .topObstacle {
-    background-color: green;
+    background-image: url('assets/tree_stump.png');
+    background-size: contain;
     transform: rotate(180deg);
     width: 60px;
     height: 300px;
     position: absolute;
+    z-index: +2;
+}
+
+.cloud {
+    background-image: url('assets/cloud.png');
+    background-size: cover;
+    width: 140px;
+    height: 110px;
+    position: absolute;
+    z-index: +1;
+}
+
+h1 {
+    color: red;
+    z-index: +5;
+    position: absolute;
+    font-size: 124px;
 }
